@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>assesment</title>
+    <link rel="icon" type="image/x-icon" href="ck.jpg">
+    </head>
+    <body style="background-image: url(5.jpg);background-repeat: no-repeat;background-attachment: fixed;" >
+        <div class="row">
+            <div class="col-sm-5">
+            <p  style="font-family: 'Times New Roman', Times, serif;font-size: xx-large;display: none;float: left; color: green;margin-top:450px; margin-left: 100px;" id="score" ></p>
+            </div>
+        
+            <div class="col-sm-7">
+        <div style="background-color:floralwhite">
+        <P style="float: right;color: rgb(30, 16, 185);font-size: larger;font-family: 'Times New Roman', Times, serif;" class="sticky-top">Time:<span id="timer"></span></P>
+        <form action="userdata.php" method="GET">
+        1.We can use selector as
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="choice1" name="n1" class="form-check-input" ><span id="cl">Html tag</span><i  class="fa fa-close" style="color: red;display: none;" id="tick1"></i></label>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="choice2" name="n1" class="form-check-input" ><span id="cl1">Id</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick2"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="choice3" name="n1" class="form-check-input" ><span id="cl2">Classes</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick3"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="choice4" name="n1" class="form-check-input "><span id="cl3">All of the above</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick4"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset"  class="btn btn-secondary" value="clear selection">
+        </div>
+        </form>
+        <form>
+        2.Which is the following is equivalent to mouse event(hover)?
+        <div class="form-group-inline form-check">
+           <label><input type="radio" id="ch1" name="na2" class="form-check-input" ><span id="cl4">Mousedown()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick5"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="ch2" name="na2" class="form-check-input" ><span id="cl5">Mouseup()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick6"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="ch3" name="na2" class="form-check-input" ><span id="cl6">Mouseenter()</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick7"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="ch4" name="na2" class="form-check-input"><span id="cl7">Mouseleave()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick8"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection">
+        </div>
+        </form>
+        <form>
+        3.Which of the following form event will be activated when out of focus?
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="c1" name="nam3" class="form-check-input"><span id="cl8" >focus</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick9"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="c2" name="nam3" class="form-check-input"><span id="cl9">blur</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick10"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="c3" name="nam3" class="form-check-input"><span id="cl10">change</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick11"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="c4" name="nam3" class="form-check-input"><span id="cl11">exit</label><i class="fa fa-close" style="color: red;display: none;" id="tick12"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection">
+        </div>
+        </form>
+         <form>  
+        4.Find out the mismatch pair?
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="1" name="name4" class="form-check-input"><span id="cl12">hide()=fadeout()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick13"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="2" name="name4" class="form-check-input"><span id="cl13">show()=fadein()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick14"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="3" name="name4" class="form-check-input"><span id="cl14">toggle()=fadeto()</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick15"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="4" name="name4" class="form-check-input"><span id="cl15">All are incorrect pair</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick16"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection" >
+        </div>
+        </form>
+        <form>
+        5.Which of the following is a library?
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="op1" name="g1" class="form-check-input"><span id="cl16">Java Script</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick17"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="op2" name="g1" class="form-check-input"><span id="cl17">Jquery</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick18"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="op3" name="g1" class="form-check-input"><span id="cl18">Php</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick19"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="op4" name="g1" class="form-check-input"><span id="cl19">Python</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick20"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection">
+        </div>
+        </form>
+        <form>
+        6.Expand DOM
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="opt1" name="a1" class="form-check-input"><span id="cl20">Detailed Object Model</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick21"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="opt2" name="a1" class="form-check-input"><span id="cl21">Document Orient Model</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick22"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="opt3" name="a1" class="form-check-input"><span id="cl22">Document Object Model</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick23"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="opt4" name="a1" class="form-check-input"><span id="cl23">Document Object Modifier</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick24"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection" >
+        </div>
+        </form>
+        <form>
+        7.Which of the following is used to hide the content
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="o1" name="e1" class="form-check-input"><span id="cl24">fade out</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick25"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="o2" name="e1" class="form-check-input"><span id="cl25">fadein</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick26"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="o3" name="e1" class="form-check-input"><span id="cl26">hide()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick27"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="o4" name="e1" class="form-check-input"><span id="cl27">both a & c</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick28"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection">
+        </div>
+        </form>
+        <form>
+        8.Which of the following is used to display while debugging
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="q1" name="f1" class="form-check-input"><span id="cl28">Console.log()</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick29"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="q2" name="f1" class="form-check-input"><span id="cl29">Document.write()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick30"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="q3" name="f1" class="form-check-input"><span id="cl30">Window.alert()</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick31"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="q4" name="f1" class="form-check-input"><span id="cl31">innerhtml</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick32"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection" >
+        </div>
+        </form>
+        <form>
+        9.Which of the following not an event?
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="l1" name="k1" class="form-check-input"><span id="z1">Onloading</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick33"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="l2" name="k1" class="form-check-input"><span id="z2">Onkeydown</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick34"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="l3" name="k1" class="form-check-input"><span id="z3">Onmouseover</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick35"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="l4" name="k1" class="form-check-input"><span id="z4">All are js event</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick36"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection" >
+        </div>
+        </form>
+        <form>
+        10.Which of the following is used to declare the variable?
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="qt1" name="p1" class="form-check-input"><span id="cl36">Const</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick37"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="qt2" name="p1" class="form-check-input"><span id="cl37">Let</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick38"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="qt3" name="p1" class="form-check-input"><span id="cl38">Var</span></label><i class="fa fa-close" style="color: red;display: none;" id="tick39"></i>
+        </div>
+        <div class="form-group-inline form-check">
+        <label><input type="radio" id="qt4" name="p1" class="form-check-input"><span id="cl39">All of the above</span></label><i class="fa fa-check" style="color: green;display: none;" id="tick40"></i>
+        </div>
+        <div class="text-center">
+        <input type="reset" class="btn btn-secondary" value="clear selection" >
+        </div>
+        </form>
+        </div>
+        </div></div>
+        <script>
+            function result()
+            { 
+               var score = 0;
+               
+            if(document.getElementById("choice4").checked )
+            {
+             document.getElementById("tick4").style.display="block";
+
+            document.getElementById("cl3").style.color="green";
+             score++;
+            
+             
+            }
+            else if(document.getElementById("choice1").checked)
+            {
+                
+                document.getElementById("tick1").style.display="block";
+                document.getElementById("cl").style.color="red";
+                document.getElementById("cl3").style.color="green";
+                
+                
+            }
+            else if(document.getElementById("choice2").checked)
+            {
+                document.getElementById("tick2").style.display="block";
+                document.getElementById("cl1").style.color="red";
+                document.getElementById("cl3").style.color="green";
+            
+            }
+            else if(document.getElementById("choice3").checked)
+            {
+                document.getElementById("tick3").style.display="block";
+                document.getElementById("cl2").style.color="red";
+                document.getElementById("cl3").style.color="green";
+            
+            }
+            else
+            {
+              
+            }
+            
+            if(document.getElementById("ch3").checked)
+            {
+                document.getElementById("tick7").style.display="block";
+                document.getElementById("cl6").style.color="green";
+                score++;
+                
+            }
+            else if(document.getElementById("ch1").checked)
+            {
+                document.getElementById("tick5").style.display="block";
+                document.getElementById("cl4").style.color="red";
+                document.getElementById("cl6").style.color="green";
+                
+            }
+            else if(document.getElementById("ch2").checked)
+            {
+                document.getElementById("tick6").style.display="block";
+                document.getElementById("cl5").style.color="red";
+                document.getElementById("cl6").style.color="green";
+                
+            }
+            else if(document.getElementById("ch4").checked)
+            {
+                document.getElementById("tick8").style.display="block";
+
+                document.getElementById("cl7").style.color="red";
+                document.getElementById("cl6").style.color="green";
+                
+            }
+            else
+            {
+                
+            }
+            
+            if(document.getElementById("c2").checked)
+            {
+                document.getElementById("tick10").style.display="block";
+                document.getElementById("cl9").style.color="green";
+                score++;
+                
+            }
+            else if(document.getElementById("c1").checked)
+            {
+                document.getElementById("tick9").style.display="block";
+                document.getElementById("cl8").style.color="red";
+                document.getElementById("cl9").style.color="green";
+                
+            }
+            else if(document.getElementById("c3").checked)
+            {
+                document.getElementById("tick11").style.display="block";
+                document.getElementById("cl10").style.color="red";
+                document.getElementById("cl9").style.color="green";
+                
+            }
+            else if(document.getElementById("c4").checked)
+            {
+                document.getElementById("tick12").style.display="block";
+                document.getElementById("cl11").style.color="red";
+                document.getElementById("cl9").style.color="green";
+                
+            }
+            else
+            {
+                
+            }
+            
+            if(document.getElementById("3").checked)
+            {
+                document.getElementById("tick15").style.display="block";
+                document.getElementById("cl14").style.color="green";
+                score++;
+                
+            }
+            else if(document.getElementById("1").checked)
+            {
+                document.getElementById("tick13").style.display="block";
+                document.getElementById("cl12").style.color="red";
+                document.getElementById("cl14").style.color="green";
+               
+            }
+            else if(document.getElementById("2").checked)
+            {
+                document.getElementById("tick14").style.display="block";
+                document.getElementById("cl13").style.color="red";
+                document.getElementById("cl14").style.color="green";
+                
+            }
+            else if(document.getElementById("4").checked)
+            {
+                document.getElementById("tick16").style.display="block";
+                document.getElementById("cl15").style.color="red";
+                document.getElementById("cl14").style.color="green";
+                
+            }
+            else
+            {
+                
+            }
+        
+            if(document.getElementById("op2").checked)
+            {
+                document.getElementById("tick18").style.display="block";
+                document.getElementById("cl17").style.color="green";
+                score++;
+                
+            }
+            else if(document.getElementById("op1").checked)
+            {
+                document.getElementById("tick17").style.display="block";
+                document.getElementById("cl16").style.color="red";
+                document.getElementById("cl17").style.color="green";
+               
+            }
+            else if(document.getElementById("op3").checked)
+            {
+                document.getElementById("tick19").style.display="block";
+                document.getElementById("cl18").style.color="red";
+                document.getElementById("cl17").style.color="green";
+               
+            }
+            else if(document.getElementById("op4").checked)
+            {
+                document.getElementById("tick20").style.display="block";
+                document.getElementById("cl19").style.color="red";
+                document.getElementById("cl17").style.color="green";
+               
+            }
+            else
+            {
+               
+            }
+            
+            if(document.getElementById("opt3").checked)
+            {
+                document.getElementById("tick23").style.display="block";
+                document.getElementById("cl22").style.color="green";
+                score++;
+               
+            }
+            else if(document.getElementById("opt1").checked)
+            {
+                document.getElementById("tick21").style.display="block";
+                document.getElementById("cl20").style.color="red";
+                document.getElementById("cl22").style.color="green";
+            
+            }
+            else if(document.getElementById("opt2").checked)
+            {
+                document.getElementById("tick22").style.display="block";
+                document.getElementById("cl21").style.color="red";
+                document.getElementById("cl22").style.color="green";
+                
+            }
+            else if(document.getElementById("opt4").checked)
+            {
+                document.getElementById("tick24").style.display="block";
+                document.getElementById("cl23").style.color="red";
+                document.getElementById("cl22").style.color="green";
+                
+            }
+            else
+            {
+               
+            }
+            
+            if(document.getElementById("o4").checked)
+            {
+                document.getElementById("tick28").style.display="block";
+                document.getElementById("cl27").style.color="green";
+                score++;
+                
+            }
+            else if(document.getElementById("o1").checked)
+            {
+                document.getElementById("tick25").style.display="block";
+                document.getElementById("cl24").style.color="red";
+                document.getElementById("cl27").style.color="green";
+                
+            }
+            else if(document.getElementById("o2").checked)
+            {
+                document.getElementById("tick26").style.display="block";
+                document.getElementById("cl25").style.color="red";
+                document.getElementById("cl27").style.color="green";
+               
+            }
+            else if(document.getElementById("o3").checked)
+            {
+                document.getElementById("tick27").style.display="block";
+                document.getElementById("cl26").style.color="red";
+                document.getElementById("cl27").style.color="green";
+               
+            }
+            else
+            {
+               
+            }
+            
+            if(document.getElementById("q1").checked)
+            {
+                document.getElementById("tick29").style.display="block";
+                document.getElementById("cl28").style.color="green";
+                score++;
+               
+            }
+            else if(document.getElementById("q2").checked)
+            {
+                document.getElementById("tick30").style.display="block";
+                document.getElementById("cl29").style.color="red";
+                document.getElementById("cl28").style.color="green";
+               
+            }
+            else if(document.getElementById("q3").checked)
+            {
+                document.getElementById("tick31").style.display="block";
+                document.getElementById("cl30").style.color="red";
+                document.getElementById("cl28").style.color="green";
+               
+            }
+            else if(document.getElementById("q4").checked)
+            {
+                document.getElementById("tick32").style.display="block";
+                document.getElementById("cl31").style.color="red";
+                document.getElementById("cl28").style.color="green";
+               
+            }
+            else
+            {
+               
+            }
+            
+            if(document.getElementById("l1").checked)
+            {
+                document.getElementById("tick33").style.display="block";
+                document.getElementById("z1").style.color="green";
+                score++;
+               
+            }
+            else if(document.getElementById("l2").checked)
+            {
+                document.getElementById("tick34").style.display="block";
+                document.getElementById("z2").style.color="red";
+                document.getElementById("z1").style.color="green";
+               
+            }
+            else if(document.getElementById("l3").checked)
+            {
+                document.getElementById("tick35").style.display="block";
+                document.getElementById("z3").style.color="red";
+                document.getElementById("z1").style.color="green";
+                
+            }
+            else if(document.getElementById("l4").checked)
+            {
+                document.getElementById("tick36").style.display="block";
+                document.getElementById("z4").style.color="red";
+                document.getElementById("z1").style.color="green";
+                
+            }
+            else
+            {
+                
+            }
+            
+            if(document.getElementById("qt4").checked)
+            {
+                document.getElementById("tick40").style.display="block";
+                document.getElementById("cl39").style.color="green";
+                score++;
+               
+            }
+            else if(document.getElementById("qt1").checked)
+            {
+                document.getElementById("tick37").style.display="block";
+                document.getElementById("cl36").style.color="red";
+                document.getElementById("cl39").style.color="green";
+               
+            }
+            else if(document.getElementById("qt2").checked)
+            {
+                document.getElementById("tick38").style.display="block";
+                document.getElementById("cl37").style.color="red";
+                document.getElementById("cl39").style.color="green";
+               
+            }
+            else if(document.getElementById("qt3").checked)
+            {
+                document.getElementById("tick39").style.display="block";
+                document.getElementById("cl38").style.color="red";
+                document.getElementById("cl39").style.color="green";
+               
+            }
+            else 
+            {
+                
+            }
+            
+            document.getElementById("score").innerHTML="Score Obtained :"+score+"/10";
+            document.getElementById("score").style.display="block";
+            
+            }   
+        </script>
+    <script>
+        var sec = 60*10;
+        var time = setInterval(myTimer,1000);
+        function myTimer()
+        {
+            document.getElementById('timer').innerHTML=sec +"sec left";
+            sec--;
+            if(sec == -1)
+            {
+                clearInterval(time);
+                alert('Time Out(*.*)!');
+            }
+        }
+    </script>
+    <br>
+    <div class="text-center">
+    
+    <button type="button" value="submit" onclick="result()" class="btn btn-outline-info btn-lg ">submit</button>
+    </div>
+    
+      <br>  
+      <footer>
+        <P style="float: right;color:navy;font-size: larger;margin-right: 50px;"> Designed By L & D NISHA SUGANTHINI
+        </P>
+      </footer>                
+    
+</body>
+</html>
